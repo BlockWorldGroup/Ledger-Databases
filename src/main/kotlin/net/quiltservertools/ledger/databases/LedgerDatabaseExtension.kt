@@ -14,6 +14,6 @@ class LedgerDatabaseExtension : DatabaseExtension {
         return Ledger.config[DatabaseExtensionSpec.database].database.getDataSource(savePath)
     }
 
-    override fun getIdentifier(): Identifier = 
+    override fun getIdentifier(): Identifier =
         Ledger.config[DatabaseExtensionSpec.database].database.getDatabaseIdentifier()
 }
